@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Grid solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created with [Create React App](https://github.com/facebook/create-react-app).
+
+## Demo
+Link: http://demo.mayank.uk
+Screenshot:
+![Screenshot](http://demo.mayank.uk/Screenshot.png)
+
 
 ## Available Scripts
 
