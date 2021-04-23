@@ -105,38 +105,35 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <center>
-          <div className='grid'>
-            <div>Box Color:</div>
+        <div className='grid'>
+          <div className='field'>Box Color:{' '}
             <ColorPicker
               name='color'
               defaultValue={color}
               color={color}
               onChange={color => setColor(color.color)}
-            />
-            <div>Highlight Color:</div>
+            /></div>
+          <div className='field'>Highlight Color:{' '}
             <ColorPicker
               name='highlight'
               color={highlight}
               onChange={color => setHighlight(color.color)}
-
-            />
-            <div>Size of grid: {value}</div>
-            <Slider
-              value={value}
-              onChange={handleValue}
-              min={2}
-              max={7}
-              step={1}
-              valueLabelDisplay="auto"
-            />
-            <div className='grid'>
-              {grid.map((htmlRow, j) => (<div className='gridRow'>{htmlRow.map((htmlCol, i) => (
-                <div className='box' style={getStyle(i, j, htmlCol)} onClick={displayValue} onMouseOut={hideValue} onMouseOver={() => { console.log("i,j", i, j); check(i, j) }}>{getValue(i, j)}</div>
-              ))}</div>))}
-            </div>
+            /></div>
+          <div className='field'>Size of grid: <strong>{value}</strong></div>
+          <Slider
+            value={value}
+            onChange={handleValue}
+            min={2}
+            max={7}
+            step={1}
+            valueLabelDisplay="auto"
+          />
+          <div className='grid'>
+            {grid.map((htmlRow, j) => (<div className='gridRow'>{htmlRow.map((htmlCol, i) => (
+              <div className='box' style={getStyle(i, j, htmlCol)} onClick={displayValue} onMouseOut={hideValue} onMouseOver={() => { console.log("i,j", i, j); check(i, j) }}>{getValue(i, j)}</div>
+            ))}</div>))}
           </div>
-        </center>
+        </div>
       </header>
     </div>
   );
