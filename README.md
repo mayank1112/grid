@@ -1,10 +1,10 @@
 # Grid solution
 
-This project was created with [Create React App](https://github.com/facebook/create-react-app).
+Create an app that renders a grid of 0s and 1s, and allows you to count the number of continuous blocks of 1s. This project was created with [Create React App](https://github.com/facebook/create-react-app). You can see demo by clicking here: http://demo.mayank.uk 
 
 ## Demo
-Link: http://demo.mayank.uk
-Screenshot:
+Link: http://demo.mayank.uk \
+Screenshot:\
 ![Screenshot](http://demo.mayank.uk/Screenshot.png)
 
 
