@@ -1,14 +1,24 @@
 # Grid solution
 
-Create an app that renders a grid of 0s and 1s, and allows you to count the number of continuous blocks of 1s. You can see demo by clicking here: http://demo.mayank.uk 
+A react app that renders a grid of 0s and 1s, and allows you to count the number of continuous blocks of 1s using recursive function. You can see demo by clicking here: http://demo.mayank.uk 
 
 ## Demo
 Link: http://demo.mayank.uk \
-Screenshot:\
-![Screenshot](http://demo.mayank.uk/Screenshot.png)
+Screenshots:\
+![Screenshot](http://demo.mayank.uk/Screenshot.png?random)
+![Screenshot 2](http://demo.mayank.uk/Screenshot1.png)
+
+
+## Configuration
+
+You can change following values in App.js: \
+const DEFAULT_SIZE = 3; \
+const MIN_SIZE = 1; \
+const MAX_SIZE = 4; 
 
 
 ## Available Scripts
+
 
  This project was created with [Create React App](https://github.com/facebook/create-react-app). In the project directory, you can run:
 
@@ -19,11 +29,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `yarn build`
 
@@ -74,4 +79,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# grid
