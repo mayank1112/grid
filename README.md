@@ -4,8 +4,9 @@ Create an app that renders a grid of 0s and 1s, and allows you to count the numb
 
 ## Demo
 Link: http://demo.mayank.uk \
-Screenshot:\
+Screenshots:\
 ![Screenshot](http://demo.mayank.uk/Screenshot.png)
+![Screenshot 2](http://demo.mayank.uk/Screenshot1.png)
 
 
 ## Configuration
