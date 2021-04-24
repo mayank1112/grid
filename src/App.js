@@ -62,27 +62,27 @@ function App() {
       setCurrX(x);
       setCurrY(y);
       filledSquare(x, y);
-      searchMore(x, y, -1, -1, value * value);
+      searchConnections(x, y, -1, -1, value * value);
     }
   };
 
-  const searchMore = (x, y, oldX, oldY, size) => {
-    if (size === 0) { return; }
+  const searchConnections = (x, y, oldX, oldY, depth) => {
+    if (depth === 0) { return; }
 
     if (!(x === oldX && y === oldY) && filledSquare(x, y)) {
       if (!(x === oldX && y === oldY) && filledSquare(x, y - 1)) {
-        searchMore(x, y - 1, x, y, size - 1);
+        searchConnections(x, y - 1, x, y, depth - 1);
       }
       if (!(x === oldX && y === oldY) && filledSquare(x, y + 1)) {
-        searchMore(x, y + 1, x, y, size - 1);
+        searchConnections(x, y + 1, x, y, depth - 1);
       }
 
       if (!(x === oldX && y === oldY) && filledSquare(x + 1, y)) {
-        searchMore(x + 1, y, x, y, size - 1);
+        searchConnections(x + 1, y, x, y, depth - 1);
       }
 
       if (!(x === oldX && y === oldY) && filledSquare(x - 1, y)) {
-        searchMore(x - 1, y, x, y, size - 1);
+        searchConnections(x - 1, y, x, y, depth - 1);
       }
     }
   }
