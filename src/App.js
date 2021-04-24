@@ -130,13 +130,15 @@ function App() {
               defaultValue={color}
               color={color}
               onChange={color => setColor(color.color)}
-            /></div>
+            />
+          </div>
           <div className='field'>Highlight Color:{' '}
             <ColorPicker
               name='highlight'
               color={highlight}
               onChange={color => setHighlight(color.color)}
-            /></div>
+            />
+          </div>
           <div className='field'>Size of grid: <strong>{sizeValue}</strong></div>
           <Slider
             value={sizeValue}
