@@ -10,10 +10,10 @@ Screenshot:\
 
 ## Configuration
 
-You can change following values in App.js:
-const DEFAULT_SIZE = 3;
-const MIN_SIZE = 1;
-const MAX_SIZE = 4;
+You can change following values in App.js: \
+const DEFAULT_SIZE = 3; \
+const MIN_SIZE = 1; \
+const MAX_SIZE = 4; \
 
 
 ## Available Scripts
