@@ -22,3 +22,22 @@
 .App-link {
   color: #61dafb;
 }
+
+.gridRow {
+  display: flex;
+}
+
+.grid {
+  width: 300px;
+  display: inline-block;
+}
+
+.field {
+  text-align: left;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

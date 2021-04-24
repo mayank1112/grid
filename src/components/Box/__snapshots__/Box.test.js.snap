@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Box> component should match snapshot 1`] = `
+<div
+  className="box"
+  onClick={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+  style={Object {}}
+>
+  1
+</div>
+`;
