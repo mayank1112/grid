@@ -11,7 +11,7 @@ Screenshots:\
 
 ## Configuration
 
-You can change following values in App.js: \
+You can change following values in src/constants/config.js: \
 const DEFAULT_SIZE = 3; \
 const MIN_SIZE = 1; \
 const MAX_SIZE = 4; 
@@ -21,6 +21,9 @@ const MAX_SIZE = 4;
 
 
  This project was created with [Create React App](https://github.com/facebook/create-react-app). In the project directory, you can run:
+### `yarn install`
+
+Installs the dependencies
 
 ### `yarn start`
 
