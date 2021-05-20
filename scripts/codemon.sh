@@ -9,35 +9,40 @@ mkdir "./src/components/${componentName}"
 
 # JSX
 FN="./src/components/${componentName}/${componentName}.jsx"
-echo "import {get${componentName}Data} from '../utils/get${componentName}Data.js'" > $FN
+echo "import {get${componentName}Data} from '../../utils/get${componentName}Data.js';" > $FN
+echo "import './${componentName}.css';" >> $FN
 echo "const ${componentName} = () => { const ${componentName}Data = get${componentName}Data(); return (<div className='content${componentName}'>{${componentName}Data}</div>); };" >> $FN
 echo "export default ${componentName};" >> $FN
 
 # CSS
-echo ".content${componentName} { color: black; }" > "./src/components/${componentName}/${componentName}.css" > "./src/components/${componentName}.css"
-echo "@media (max-width: 768px) { .content${componentName} { color: gray; } }" >> "./src/components/${componentName}/${componentName}.css"
+FN="./src/components/${componentName}/${componentName}.css"
+echo ".content${componentName} { color: black; }" > $FN
+echo "@media (max-width: 768px) { .content${componentName} { color: gray; } }" >> $FN
 
 # JS
-echo "export const get${componentName}Data = () => { return '${componentName} data'; };" > "./src/utils/get${componentName}Data.js"
+FN="./src/utils/get${componentName}Data.js"
+echo "export const get${componentName}Data = () => { return '${componentName} data'; };" > $FN
 
 # JS UNNIT TEST
-echo "import Enzyme from 'enzyme';" > "./src/utils/get${componentName}Data.test.js"
-echo "import Adapter from '@wojtekmaj/enzyme-adapter-react-17';" >> "./src/utils/get${componentName}Data.test.js"
-echo "import { get${componentName}Data } from './get${componentName}Data.js';" >> "./src/utils/get${componentName}Data.test.js"
-echo "Enzyme.configure({ adapter: new Adapter() });" >> "./src/utils/get${componentName}Data.test.js"
-echo "it('get${componentName}Data should return correct value', () => {" >> "./src/utils/get${componentName}Data.test.js"
-echo "const actual = get${componentName}Data();" >> "./src/utils/get${componentName}Data.test.js"
-echo "const expected = '${componentName} data';" >> "./src/utils/get${componentName}Data.test.js"
-echo "expect(actual).toBe(expected);" >> "./src/utils/get${componentName}Data.test.js"
-echo "});" >> "./src/utils/get${componentName}Data.test.js"
+FN="./src/utils/get${componentName}Data.test.js"
+echo "import Enzyme from 'enzyme';" > $FN
+echo "import Adapter from '@wojtekmaj/enzyme-adapter-react-17';" >> $FN
+echo "import { get${componentName}Data } from './get${componentName}Data.js';" >> $FN
+echo "Enzyme.configure({ adapter: new Adapter() });" >> $FN
+echo "it('get${componentName}Data should return correct value', () => {" >> $FN
+echo "const actual = get${componentName}Data();" >> $FN
+echo "const expected = '${componentName} data';" >> $FN
+echo "expect(actual).toBe(expected);" >> $FN
+echo "});" >> $FN
 
 # JSX UNNIT TEST
-echo "import Enzyme, { shallow } from 'enzyme';" > "./src/components/${componentName}/${componentName}.test.js"
-echo "import Adapter from '@wojtekmaj/enzyme-adapter-react-17';" >> "./src/components/${componentName}/${componentName}.test.js"
-echo "import ${componentName} from './${componentName}';" >> "./src/components/${componentName}/${componentName}.test.js"
-echo "import toJson from 'enzyme-to-json';" >> "./src/components/${componentName}/${componentName}.test.js"
-echo "Enzyme.configure({ adapter: new Adapter() });" >> "./src/components/${componentName}/${componentName}.test.js"
-echo "it('<${componentName}> component should match snapshot', () => {" >> "./src/components/${componentName}/${componentName}.test.js"
-echo "const wrapper = shallow(<${componentName} />);" >> "./src/components/${componentName}/${componentName}.test.js"
-echo "expect(toJson(wrapper)).toMatchSnapshot();" >> "./src/components/${componentName}/${componentName}.test.js"
-echo "});" >> "./src/components/${componentName}/${componentName}.test.js"
+FN="./src/components/${componentName}/${componentName}.test.js"
+echo "import Enzyme, { shallow } from 'enzyme';" > $FN
+echo "import Adapter from '@wojtekmaj/enzyme-adapter-react-17';" >>  $FN
+echo "import ${componentName} from './${componentName}';" >>  $FN
+echo "import toJson from 'enzyme-to-json';" >>  $FN
+echo "Enzyme.configure({ adapter: new Adapter() });" >>  $FN
+echo "it('<${componentName}> component should match snapshot', () => {" >>  $FN
+echo "const wrapper = shallow(<${componentName} />);" >>  $FN
+echo "expect(toJson(wrapper)).toMatchSnapshot();" >>  $FN
+echo "});" >>  $FN
