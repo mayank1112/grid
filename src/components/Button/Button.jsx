@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import './Button.css';
 
 const Box = ({ children, onClick }) => (
-    <div
+    <button
         className='box'
         onClick={onClick}
-    >{children}</div>
+    >{children}</button>
 );
 
 Box.propTypes = {

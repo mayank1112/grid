@@ -1,0 +1,1 @@
+export const Features = ({ match: { params: { id } } }) => 'features for ' + id;
