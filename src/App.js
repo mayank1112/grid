@@ -8,7 +8,7 @@ function App() {
   const [data, setData] = useState('');
 
   const generateGrid = async () => {
-    const response = await axios.get('/index.json');
+    const response = await axios.get('/mock.json');
     setData(response.data.value);
   };
 
