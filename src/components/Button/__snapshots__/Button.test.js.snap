@@ -4,9 +4,6 @@ exports[`<Box> component should match snapshot 1`] = `
 <div
   className="box"
   onClick={[Function]}
-  onMouseOut={[Function]}
-  onMouseOver={[Function]}
-  style={Object {}}
 >
   1
 </div>

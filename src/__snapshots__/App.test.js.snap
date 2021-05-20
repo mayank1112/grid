@@ -1,20 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<App> component should call hook 1`] = `
-<App>
-  <div
-    className="App"
+exports[`<App> component should match snapshot 1`] = `
+<div
+  className="App"
+>
+  <Box
+    onClick={[Function]}
   >
-    <Box
-      onClick={[Function]}
-    >
-      <div
-        className="box"
-        onClick={[Function]}
-      >
-        1
-      </div>
-    </Box>
-  </div>
-</App>
+    1
+  </Box>
+</div>
 `;

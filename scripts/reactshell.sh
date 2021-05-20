@@ -9,9 +9,11 @@ mkdir "./src/components/${componentName}"
 
 # JSX
 FN="./src/components/${componentName}/${componentName}.jsx"
+echo "import PropTypes from 'prop-types';" > $FN
 echo "import {get${componentName}Data} from '../../utils/get${componentName}Data.js';" > $FN
 echo "import './${componentName}.css';" >> $FN
 echo "const ${componentName} = () => { const ${componentName}Data = get${componentName}Data(); return (<div className='content${componentName}'>{${componentName}Data}</div>); };" >> $FN
+echo "${componentName}.propTypes = {};" >> $FN
 echo "export default ${componentName};" >> $FN
 
 # CSS

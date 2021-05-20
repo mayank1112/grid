@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './Box.css';
+import './Button.css';
 
 const Box = ({ children, onClick }) => (
     <div

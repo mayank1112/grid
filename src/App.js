@@ -1,6 +1,6 @@
 import './App.css';
 import { useEffect } from 'react';
-import Box from './components/Box/Box';
+import Button from './components/Button/Button';
 import axios from 'axios';
 import { useState } from 'react';
 
@@ -22,9 +22,9 @@ function App() {
 
   return (
     <div className="App">
-      <Box
+      <Button
         onClick={onClick}
-      >{data}</Box>
+      >{data}</Button>
 
     </div>
   );
