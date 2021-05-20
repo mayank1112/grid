@@ -1,6 +1,7 @@
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import { Home } from './containers/Home/Home';
 import { Features } from './containers/Features/Features';
+import './App.css';
 
 const App = () => (
   <BrowserRouter>
