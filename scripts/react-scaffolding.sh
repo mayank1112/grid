@@ -5,8 +5,7 @@ echo "********* WELCOME TO REACT SCAFFOLDING ***********"
 echo "**************************************************"
 echo ""
 echo "Enter component name to start creating components"
-read -p "Add -c to create a component and container ('Counter' being default value): " name
-componentName=${componentName:-Counter}
+read -p "Add -c to create a component and container: " componentName
 
 # FOLDERS
 mkdir "./src/components"
