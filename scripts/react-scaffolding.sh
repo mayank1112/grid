@@ -1,5 +1,11 @@
-# INPUT
-read -p "Enter component name ('Counter' being default value): " name
+# INTRO 
+echo ""
+echo "**************************************************"
+echo "********* WELCOME TO REACT SCAFFOLDING ***********"
+echo "**************************************************"
+echo ""
+echo "Enter component name to start creating components"
+read -p "Add -c to create a component and container ('Counter' being default value): " name
 componentName=${componentName:-Counter}
 
 # FOLDERS
@@ -18,7 +24,8 @@ echo "import './${componentName}.css';" >> $FN
 echo "" >> $FN
 echo "const ${componentName} = () => {" >> $FN
 echo "useEffect(() => {});" >> $FN
-echo "const ${componentName}Data = get${componentName}Data(); return (<div className='content${componentName}'>{${componentName}Data}</div>); };" >> $FN
+echo "const ${componentName}Data = get${componentName}Data();" >> $FN
+echo "return (<div className='content${componentName}'>{${componentName}Data}</div>); };" >> $FN
 echo "${componentName}.propTypes = {};" >> $FN
 echo "export default ${componentName};" >> $FN
 
@@ -27,14 +34,14 @@ FN="./src/components/${componentName}/${componentName}.css"
 echo "" >> $FN
 
 if [ "$1" == '-c' ]; then
-# CONTAINER
+    # CONTAINER
     FN="./src/containers/${componentName}Container/${componentName}Container.jsx"
     echo "import {useEffect} from 'react';" > $FN
     echo "import ${componentName} from '../../components/${componentName}';" >> $FN
     echo "" >> $FN
     echo "const ${componentName}Container = () => {" >> $FN
     echo "useEffect(() => {});" >> $FN
-    echo "const ${componentName}Data = get${componentName}Data(); "
+    echo "const ${componentName}Data = get${componentName}Data();" >> $FN
     echo "return (<${componentName} />);" >> $FN
     echo "};" >> $FN
     echo "export default ${componentName}Container;" >> $FN
