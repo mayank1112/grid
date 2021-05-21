@@ -53,7 +53,6 @@ if [ "$1" == '-c' ]; then
     # CONTAINER UNIT TEST
     FN="./src/containers/${componentName}Container/${componentName}Container.test.js"
     echo "import Enzyme, { mount } from 'enzyme';" > $FN
-    echo "import { useEffect } from 'react';" >> $FN
     echo "import Adapter from '@wojtekmaj/enzyme-adapter-react-17';" >> $FN
     echo "import ${componentName}Container from './${componentName}Container';" >> $FN
     echo "import toJson from 'enzyme-to-json';" >> $FN
