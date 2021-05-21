@@ -26,24 +26,24 @@ echo "export default ${componentName};" >> $FN
 FN="./src/components/${componentName}/${componentName}.css"
 echo "" >> $FN
 
-if ["$1" == '-c'] then
+if [ "$1" == '-c' ]; then
 # CONTAINER
-FN="./src/containers/${componentName}Container/${componentName}Container.jsx"
-echo "import {useEffect} from 'react';" > $FN
-echo "import ${componentName} from '../../components/${componentName}';" >> $FN
-echo "" >> $FN
-echo "const ${componentName}Container = () => {" >> $FN
-echo "useEffect(() => {});" >> $FN
-echo "const ${componentName}Data = get${componentName}Data(); "
-echo "return (<${componentName} />);" >> $FN
-echo "};" >> $FN
-echo "export default ${componentName}Container;" >> $FN
-fi
+    FN="./src/containers/${componentName}Container/${componentName}Container.jsx"
+    echo "import {useEffect} from 'react';" > $FN
+    echo "import ${componentName} from '../../components/${componentName}';" >> $FN
+    echo "" >> $FN
+    echo "const ${componentName}Container = () => {" >> $FN
+    echo "useEffect(() => {});" >> $FN
+    echo "const ${componentName}Data = get${componentName}Data(); "
+    echo "return (<${componentName} />);" >> $FN
+    echo "};" >> $FN
+    echo "export default ${componentName}Container;" >> $FN
 
-# CONTAINER CSS
-FN="./src/containers/${componentName}Container/${componentName}Container.css"
-echo ".content${componentName} { color: black; }" > $FN
-echo "@media (max-width: 768px) { .content${componentName} { color: gray; } }" >> $FN
+    # CONTAINER CSS
+    FN="./src/containers/${componentName}Container/${componentName}Container.css"
+    echo ".content${componentName} { color: black; }" > $FN
+    echo "@media (max-width: 768px) { .content${componentName} { color: gray; } }" >> $FN
+fi
 
 # JS
 FN="./src/utils/get${componentName}Data.js"
