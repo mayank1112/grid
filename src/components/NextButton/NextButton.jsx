@@ -3,7 +3,7 @@ import { memo } from 'react';
 import { Button } from '@material-ui/core';
 
 const NextButton = ({ onClick, disabled }) => {
-    const customProps = disabled ? { disabled: '' } : {};
+    const customProps = disabled ? { disabled: true } : {};
     return (
         <div className='button nextButton'>
             <Button {...customProps} onClick={onClick} variant="contained" color="primary">Next</Button>

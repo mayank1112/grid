@@ -8,16 +8,15 @@ const Card = ({ card }) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        const generateCard = async () => {
+            setLoading(true);
+            const { url } = card;
+            const response = await axios.get(url);
+            setImage(response.data.sprites.front_default);
+            setLoading(false);
+        };
         generateCard();
     }, []);
-
-    const generateCard = async () => {
-        setLoading(true);
-        const { url } = card;
-        const response = await axios.get(url);
-        setImage(response.data.sprites.front_default);
-        setLoading(false);
-    };
 
     const { name } = card;
     return (

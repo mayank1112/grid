@@ -13,14 +13,13 @@ export const HomeContainer = () => {
     const [count, setCount] = useState(3);
 
     useEffect(() => {
+        const generateGrid = async () => {
+            const response = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=3&offset=${offset}`);
+            setData(response.data.results);
+            setCount(response.data.count)
+        };
         generateGrid();
     }, [offset]);
-
-    const generateGrid = async () => {
-        const response = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=3&offset=${offset}`);
-        setData(response.data.results);
-        setCount(response.data.count)
-    };
 
     const getPreviousCards = () => {
         setOffset(offset - 3);
