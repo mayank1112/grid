@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PreviousButton> component should match snapshot when button is disabled 1`] = `
+<div
+  className="button"
+>
+  <WithStyles(ForwardRef(Button))
+    color="primary"
+    disabled={true}
+    onClick={[MockFunction]}
+    variant="contained"
+  >
+    Previous
+  </WithStyles(ForwardRef(Button))>
+</div>
+`;
+
+exports[`<PreviousButton> component should match snapshot when button is enabled 1`] = `
+<div
+  className="button"
+>
+  <WithStyles(ForwardRef(Button))
+    color="primary"
+    onClick={[MockFunction]}
+    variant="contained"
+  >
+    Previous
+  </WithStyles(ForwardRef(Button))>
+</div>
+`;

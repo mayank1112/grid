@@ -1,17 +1,16 @@
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
-import { Home } from './containers/Home/Home';
-import { Features } from './containers/Features/Features';
+import { HomeContainer } from './HomeContainer/HomeContainer';
 import './App.css';
 
 const App = () => (
   <BrowserRouter>
     <nav>
-      <ol><Link to='/'>Home</Link></ol>
-      <ol><Link to='/features/1'>Feature 1</Link></ol>
+      <ol>
+        <Link to='/'>Home</Link>
+      </ol>
     </nav>
     <Switch>
-      <Route path='/' exact component={Home} />
-      <Route path='/features/:id' component={Features} />
+      <Route path='/' exact component={HomeContainer} />
     </Switch>
   </BrowserRouter>
 );

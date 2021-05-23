@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card> component should match snapshot 1`] = `
+<div
+  className="contentCard"
+>
+  <div>
+    <Loader />
+  </div>
+  <div>
+    mockName
+  </div>
+</div>
+`;

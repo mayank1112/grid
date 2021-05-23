@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.homeCardsContent, .homeButtonsContent {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin: 50px 10px;
+}

@@ -1,0 +1,13 @@
+.contentCard {
+    border: 1px solid orange;
+    margin: 4px;
+    border-radius: 5px;
+    background: rgb(236, 131, 33);
+    height: 80px;
+    padding: 20px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
