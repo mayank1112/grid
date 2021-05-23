@@ -1,5 +1,5 @@
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
-import { HomeContainer } from './HomeContainer/HomeContainer';
+import { HomeContainer } from './containers/HomeContainer/HomeContainer';
 import './App.css';
 
 const App = () => (

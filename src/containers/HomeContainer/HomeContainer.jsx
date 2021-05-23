@@ -7,7 +7,7 @@ import NextButton from '../../components/NextButton/NextButton';
 import './HomeContainer.css';
 import Loader from '../../components/Loader/Loader';
 
-export const Home = () => {
+export const HomeContainer = () => {
     const [data, setData] = useState([]);
     const [offset, setOffset] = useState(0);
     const [count, setCount] = useState(3);
