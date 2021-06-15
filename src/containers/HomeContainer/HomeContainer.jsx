@@ -9,7 +9,7 @@ import Loader from '../../components/Loader/Loader';
 
 export const HomeContainer = () => {
     const [data, setData] = useState([]);
-    const [offset, setOffset] = useState(0);
+    const [offset, setOffset] = useState(1110);
     const [count, setCount] = useState(3);
 
     useEffect(() => {
@@ -31,14 +31,17 @@ export const HomeContainer = () => {
 
     return (
         <>
-            <div className='homeCardsContent'>
-                {data && data.length > 0 ? data.map((card) => (
-                    <Card key={card.name} card={card} />
-                )) : <Loader />}
-            </div>
-            <div className='homeButtonsContent'>
-                <PreviousButton disabled={offset === 0} onClick={getPreviousCards} />
-                <NextButton disabled={offset >= count - 3} onClick={getNextCards} />
+            <div className='content1'>
+
+                <div className='content2'>
+
+                    <div className='content3'>
+
+                        <div className='content4'>
+                            content
+                 </div>
+                    </div>
+                </div>
             </div>
         </>
     );
