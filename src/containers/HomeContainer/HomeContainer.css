@@ -1,11 +1,14 @@
-.content3 {
-  color: blue
+body {
+    text-align: center;
+    margin: 0 auto;
+    font-family: sans-serif;
 }
-.content1 .content2 .content3 {
-    color: red
-    
+
+.homeCardsContent, .homeButtonsContent {
+    display: flex;
+    justify-content: center;
 }
-.content2 .content3 {
-    color: green
-        
+
+.button {
+    margin: 50px 10px;
 }
