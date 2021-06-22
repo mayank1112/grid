@@ -6,7 +6,7 @@ exports[`<NextButton> component should match snapshot when button is disabled 1`
 >
   <WithStyles(ForwardRef(Button))
     color="primary"
-    disabled=""
+    disabled={true}
     onClick={[MockFunction]}
     variant="contained"
   >
