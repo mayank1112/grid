@@ -1,12 +1,6 @@
 # Grid solution
 
-A react app that renders a grid of 0s and 1s, and allows you to count the number of continuous blocks of 1s using recursive function. You can see demo by clicking here: http://demo.mayank.uk 
-
-## Demo
-Link: http://demo.mayank.uk \
-Screenshots:\
-![Screenshot](http://demo.mayank.uk/Screenshot.png?random)
-![Screenshot 2](http://demo.mayank.uk/Screenshot1.png)
+A react app that renders a grid of 0s and 1s, and allows you to count the number of continuous blocks of 1s using recursive function. 
 
 
 ## Configuration
